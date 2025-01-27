@@ -1,0 +1,226 @@
+$laptop: 1440px;
+$tablet: 689px;
+$tablet-l: 509px;
+$mobile: 478px;
+
+.footer {
+  width: 100%;
+  background: #e1ede6;
+  padding: 23px 0;
+
+  &__container {
+    width: 100%;
+    display: grid;
+    //grid-template-columns: 170px 128px 128px 128px 132px;
+    grid-template-columns: minmax(170px, 285px) minmax(128px, 188px) minmax(84px, 144px) minmax(108px, 361px) 132px;
+    grid-template-rows: 68px 52px;
+    grid-template-areas: 'logo works news about-us social'
+  'contacts works news about-us social';
+
+    @media (max-width: 787px) {
+      grid-template-columns: repeat(3, 1fr) 170px;
+      grid-template-rows: 52px 1fr;
+      row-gap: 30px;
+      grid-template-areas: 'logo . . contacts'
+  'works news about-us social';
+    }
+
+    @media (max-width: 575px) {
+      grid-template-columns: 145px 1fr 170px;
+      grid-template-rows: 52px 1fr 88px;
+      row-gap: 30px;
+      grid-template-areas: 'logo . contacts'
+  'works news about-us '
+    'social social social';
+    }
+
+    @media (max-width: 419px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 35px 1fr 1fr 88px;
+      row-gap: 20px;
+      grid-template-areas: 'logo .'
+  'contacts works'
+      'news about-us'
+    'social social';
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+    width: 143px;
+    height: 35px;
+  }
+
+  &__contacts {
+    grid-area: contacts;
+
+    @media (max-width: 787px) {
+      text-align: right;
+    }
+
+    @media (max-width: 419px) {
+      text-align: left;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+      color: var(--basis-color);
+      margin-bottom: 8px;
+
+      @media (max-width: 787px) {
+        justify-content: flex-end;
+      }
+
+      @media (max-width: 419px) {
+        justify-content: flex-start;
+      }
+    }
+
+    span {
+      font-weight: 500;
+      font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+      color: var(--gray-color);
+    }
+  }
+
+  &__works {
+    grid-area: works;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+
+    span {
+      font-weight: 500;
+      font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+      color: var(--basis-color);
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+      line-height: 1.5;
+      color: var(--gray-color);
+    }
+  }
+
+  &__news {
+    grid-area: news;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+
+    @media (max-width: 575px) {
+      align-items: center;
+    }
+
+    @media (max-width: 419px) {
+      align-items: flex-start;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+      color: var(--basis-color);
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+      line-height: 1.5;
+      color: var(--gray-color);
+    }
+  }
+
+  &__about-us {
+    grid-area: about-us;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+
+    @media (max-width: 575px) {
+      margin-left: auto;
+    }
+
+    @media (max-width: 419px) {
+      align-items: flex-start;
+      margin-left: 0;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+      color: var(--basis-color);
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+      line-height: 1.5;
+      color: var(--gray-color);
+    }
+  }
+
+  &__social {
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    @media (max-width: 575px) {
+      border-top: 1px solid #c3d1c6;
+      padding-top: 20px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+
+      @media (max-width: 575px) {
+        justify-content: center;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .copy-policy {
+      display: flex;
+      flex-direction: column;
+      row-gap: 6px;
+
+      @media (max-width: 575px) {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .copy {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.2;
+        color: var(--gray-color);
+      }
+
+      .policy {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.2;
+        color: var(--gray-color);
+      }
+    }
+  }
+}

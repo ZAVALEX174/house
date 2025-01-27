@@ -1,0 +1,32 @@
+$mobile: 478px;
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    .icon {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .burger__btn_open {
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+}
