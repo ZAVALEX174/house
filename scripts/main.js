@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // updateOutput();
     const data1 = {
         item1: {
-            img: '../images/img/c01.webp',
+            img: 'images/img/c01.webp',
             alt: 'Охота Амура',
             author: 'Марсель Руссо',
             title: 'Охота Амура',
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const data2 = {
         item1: {
-            img: '../images/img/c07.webp',
+            img: 'images/img/c07.webp',
             alt: 'Над городом',
             author: 'Курт Вернер',
             title: 'Над городом',
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item2: {
-            img: '../images/img/c08.webp',
+            img: 'images/img/c08.webp',
             alt: 'Птенцы',
             author: 'Макс Рихтер',
             title: 'Птенцы',
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item3: {
-            img: '../images/img/c09.webp',
+            img: 'images/img/c09.webp',
             alt: 'Среди листьев',
             author: 'Мартин Майер',
             title: 'Среди листьев',
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item4: {
-            img: '../images/img/c10.webp',
+            img: 'images/img/c10.webp',
             alt: 'Яркая птица',
             author: 'Герман Беккер',
             title: 'Яркая птица',
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item5: {
-            img: '../images/img/c11.webp',
+            img: 'images/img/c11.webp',
             alt: 'Дятлы',
             author: 'Вульф Бауэр',
             title: 'Дятлы',
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item6: {
-            img: '../images/img/c12.webp',
+            img: 'images/img/c12.webp',
             alt: 'Большие воды',
             author: 'Вальтер Хартманн',
             title: 'Большие воды',
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const data3 = {
         item1: {
-            img: '../images/img/c13.webp',
+            img: 'images/img/c13.webp',
             alt: 'Дикий зверь',
             author: 'Пол Смит',
             title: 'Дикий зверь',
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item2: {
-            img: '../images/img/c14.webp',
+            img: 'images/img/c14.webp',
             alt: 'Скалистый берег',
             author: 'Джон Уайт',
             title: 'Скалистый берег',
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item3: {
-            img: '../images/img/c15.webp',
+            img: 'images/img/c15.webp',
             alt: 'Река и горы',
             author: 'Джим Уотсон',
             title: 'Река и горы',
@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item4: {
-            img: '../images/img/c16.webp',
+            img: 'images/img/c16.webp',
             alt: 'Белый попугай',
             author: 'Юджин Зиллион',
             title: 'Белый попугай',
@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item5: {
-            img: '../images/img/c17.webp',
+            img: 'images/img/c17.webp',
             alt: 'Ночная рыба',
             author: 'Эрик Гиллман',
             title: 'Ночная рыба',
@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
             buttonTitle: 'В корзину',
         },
         item6: {
-            img: '../images/img/c18.webp',
+            img: 'images/img/c18.webp',
             alt: 'Рыжий кот',
             author: 'Альфред Барр',
             title: 'Рыжий кот',
